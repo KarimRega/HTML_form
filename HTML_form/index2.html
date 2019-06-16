@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student feedback</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="contact">
+	<h3>Email Us</h3>
+	<div class="alert" id="alert">Barak allahou fik!</div>
+	<form id="contactForm">
+	  <p>
+		<label>Name</label>
+		<input type="text" name="name" id="name">
+	  </p>
+	  <p>
+		<label>Track</label>
+		<select name="track" id="track">
+		  <option value="ai">AI</option>
+		  <option value="web">Web</option>
+		  <option value="game">Game</option>
+		</select>
+	  </p>
+	  <p>
+		<label>Slide name (or object)</label>
+		<input type="text" name="slide" required="true" id="slide" >
+	  </p>
+	  <p class="full">
+		<label>Message</label>
+		<textarea name="message" rows="5" id="message"></textarea>
+	  </p>
+	  <p class="full">
+		<button type="submit">Submit</button>
+	  </p>
+	</form>
+	<script>
+			document.getElementById("contactForm").onsubmit = function() {myFunction()};
+			
+			function myFunction() {
+			  alert("Barak allahou fik !");
+			}
+	</script>
+  </div>
+  <!DOCTYPE html>
+</body>
+</html>
